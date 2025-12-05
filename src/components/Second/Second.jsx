@@ -5,8 +5,8 @@ export const Second = () => {
   return (<div className="second">
     <div className="sec-line"></div>
     <div className="sec-line-two"></div>
-    <p className="inter">interactive</p>
-    <p className="artist">artist!</p>
+    <p className="inter">Digital</p>
+    <p className="artist">auteur!</p>
     <div className="sec-line-three"></div>
     <div className="pic-bay">
         <img src={face} alt="face" className="face" />

@@ -1,6 +1,6 @@
 import React from "react";
 import "./third.css";
-import side from "../assets/avat1.jpeg";
+import side from "../assets/avat1.png";
 export const Third = () => {
   return (<div className="third">
     <div className="pic-side-boc">
@@ -10,19 +10,19 @@ export const Third = () => {
     <div className="third-line-two"></div>
     <div className="third-line-three"></div>
     <div className="third-line-four"></div>
-    <p className="text-one">digital art director</p>
-    <p className="text-two">interactive designer</p>
-    <p className="text-three">creative developer</p>
-    <p className="text-four">based in <u>Sri - Lanka</u></p>
-    <div className="block-a"><p className="block-a-let">a</p></div>
+    <p className="text-one">SOFTWARE ENGINEER</p>
+    <p className="text-two">VISUAL STORYTELLER</p>
+    <p className="text-three">CREATIVE DEVELOPER</p>
+    <p className="text-four">based in <b>INDIA</b></p>
+    <div className="block-a"><p className="block-a-let">I</p></div>
     <p className="text-ablaz">
-        s a multidisciplinary freelance, <br />
-        I'm passionate about creating <br />
-        iconic digital experiences <br />
+        am a multidisciplinary engineer <br />
+        exploring the intersection of <br />
+        technology and storytelling, <br />
     </p>
-    <p className="ablaz-two">through motion, typography and <br />
-        creative coding for companies and <br />
-        agencies around the world.</p>
+    <p className="ablaz-two">building intelligent applications and <br />
+                  memorable projects that bridge the gap <br />
+                  between logic and imagination.</p>
   </div>
   );
 };
