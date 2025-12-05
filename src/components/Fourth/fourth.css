@@ -1,5 +1,6 @@
 .fourth{
     height: 100vh; 
+    position: relative;
 }
 .four-bloc{
     position: absolute;
@@ -14,15 +15,13 @@
     color: #c5bdb4;
     text-transform: uppercase;
     font-family: scari;
-    font-size: 16em;
+    font-size: 13.5em; 
     margin-top: 11%;
     left: 5%;
     font-stretch: extra-expanded;
     transform: scale(1, 1.5);
-    -webkit-transform: scale(1, 1.5); /* Safari and Chrome */
-    -moz-transform: scale(1, 1.5); /* Firefox */
-    -ms-transform: scale(1, 1.5); /* IE 9+ */
-    -o-transform: scale(1, 1.5); /* Opera */
+    -webkit-transform: scale(1, 1.5); 
+    z-index: 1; 
 }
 .stamp{
     height: auto;
@@ -58,15 +57,26 @@
     margin-top: 35%;
     left: 2%;
 }
+
+/* --- UPDATED LINK STYLING --- */
+.view-link {
+    text-decoration: none;
+    z-index: 10; /* Ensures it sits on top */
+    cursor: pointer;
+}
 .tip{
     position: absolute;
-    color: #1c1b19;
+    color: #1c1b19; /* Use a highlight color if you want, e.g., #df7853 */
     letter-spacing: -2px;
     font-size: 2.5em;
     text-transform: uppercase;
     margin-top: 50%;
     font-family: scari;
     left: 2%;
+    transition: transform 0.3s ease;
+}
+.tip:hover {
+    transform: scale(1.1); /* Adds a small pop effect on hover */
 }
 .tp-des{
     position: absolute;
@@ -76,6 +86,8 @@
     margin-top: 50%;
     left: 6.5%;
 }
+/* --------------------------- */
+
 .four-line-two{
     margin-top: 61%;
     left: 36%;
@@ -91,6 +103,11 @@
     width: 400px;
     margin-top:30%;
     left: 35%;
+    z-index: 10; /* Ensures image is clickable */
+    transition: transform 0.3s ease;
+}
+.yell-blocl:hover {
+    transform: scale(1.02);
 }
 .yell-fill{
     position: absolute;
@@ -114,7 +131,7 @@
     width: 60px;
     background-color: #df7853;
     margin-top: 43%;
-    left: 47%;
+    left: 57%; 
     border-radius: 10px;
 }
 .new{
@@ -125,7 +142,7 @@
     font-family: scari;
     letter-spacing: -3px;
     margin-top: 43.5%;
-    left: 47.6%;
+    left: 57.6%; 
 }
 .new-des-think{
     position: absolute;
@@ -170,10 +187,7 @@
     right: 1%;
     text-transform: uppercase;
     transform: scale(1, 1.5);
-    -webkit-transform: scale(1, 1.5); /* Safari and Chrome */
-    -moz-transform: scale(1, 1.5); /* Firefox */
-    -ms-transform: scale(1, 1.5); /* IE 9+ */
-    -o-transform: scale(1, 1.5); /* Opera */
+    -webkit-transform: scale(1, 1.5); 
 }
 .block-a-four{
     position: absolute;
