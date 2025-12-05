@@ -61,12 +61,12 @@
 /* --- UPDATED LINK STYLING --- */
 .view-link {
     text-decoration: none;
-    z-index: 10; /* Ensures it sits on top */
+    z-index: 10;
     cursor: pointer;
 }
 .tip{
     position: absolute;
-    color: #1c1b19; /* Use a highlight color if you want, e.g., #df7853 */
+    color: #1c1b19;
     letter-spacing: -2px;
     font-size: 2.5em;
     text-transform: uppercase;
@@ -76,7 +76,7 @@
     transition: transform 0.3s ease;
 }
 .tip:hover {
-    transform: scale(1.1); /* Adds a small pop effect on hover */
+    transform: scale(1.1);
 }
 .tp-des{
     position: absolute;
@@ -84,7 +84,8 @@
     color: #1c1b19;
     font-size: 2em;
     margin-top: 50%;
-    left: 6.5%;
+    /* CHANGED: Shifted from 6.5% to 12% to separate it from "VIEW!" */
+    left: 12%; 
 }
 /* --------------------------- */
 
@@ -103,7 +104,7 @@
     width: 400px;
     margin-top:30%;
     left: 35%;
-    z-index: 10; /* Ensures image is clickable */
+    z-index: 10; 
     transition: transform 0.3s ease;
 }
 .yell-blocl:hover {

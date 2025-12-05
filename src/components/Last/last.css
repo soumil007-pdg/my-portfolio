@@ -1,146 +1,113 @@
 .last{
-    height: 45vh;
+    height: 100vh;
+    position: relative;
+    background-color: #c5bdb4;
 }
 .last-line{
-    margin-top: 1%;
+    margin-top: 10%;
+    left: 0;
     width: 100%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
-    position: absolute;
-}
-.last-line-two{
-    margin-top: 13%;
-    width: 100%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
+    height: 1px;
+    background-color: #1c1b19;
     position: absolute;
 }
 .chaniru{
-  position: absolute;
-  margin-top: 5%;
-  padding: 3px;
-  width: 100%;
-  overflow: hidden;
-}
-.marquee{
-  display:block;
-  position:relative;
-  width: 100%;
-  height: 160px;
-  animation:scroll 10s linear infinite;
-  padding:3px;
-}
-.img1 {
-  font-size: 7em;
-  font-family: scari;
-  color: #1c1b19;
-  margin: 5px;
-  float:left;
-}
-.last-blk{
+    margin-top: 17%;
     position: absolute;
-    height: 120px;
-    width: 555px;
-    background-color: #1c1b19;
-    text-transform: uppercase;
-    color: #c5bdb4;
+    width: 100%;
+    overflow: hidden; /* Hides scrollbar for marquee */
+    white-space: nowrap; /* Keeps text in one line */
 }
+.marquee {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.img1{
+    font-size: 13em;
+    font-family: scari;
+    color: #1c1b19;
+    text-transform: uppercase;
+    margin-right: 50px; /* Space between words */
+    display: flex;
+    align-items: center;
+}
+
+.last-blk{
+    font-family: gramnarrow;
+    font-size: 0.3em; /* Relative to parent font size */
+    color: #c5bdb4;
+    background-color: #1c1b19;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.last-line-two{
+    margin-top: 35%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #1c1b19;
+    position: absolute;
+}
+
 .names{
     position: absolute;
+    font-family: gramlight;
+    font-size: 1.2em;
     color: #1c1b19;
-    font-size: 2em;
-    margin-top: 17.5%;
+    margin-top: 37%;
     left: 2%;
-    font-family: scari;
+    text-transform: uppercase;
 }
+
 .legal{
     position: absolute;
-    height: 50px;
+    height: 100px;
     width: auto;
-    margin-top: 17%;
-    left: 14%;
+    left: 45%;
+    margin-top: 36%;
+    animation: rotate 10s linear infinite;
 }
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
 .legal-text{
     position: absolute;
-    margin-top: 17.5%;
-    left: 17%;
-    color: #1c1b19;
     font-family: gramlight;
-    font-size: 2em;
+    font-size: 1.2em;
+    color: #1c1b19;
+    margin-top: 37%;
+    left: 55%; /* Next to stamp */
 }
-.last-link-one{
+
+/* Footer Links */
+.last-link-one, .last-link-two, .last-link-three{
     position: absolute;
+    font-family: gramnarrow;
+    font-size: 1.5em;
     color: #1c1b19;
-    font-size: 2em;
-    font-family: gramlight;
-    margin-top: 17.5%;
-    right: 20%;
+    margin-top: 37%;
+    text-transform: uppercase;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
-.last-link-two{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 2em;
-    font-family: gramlight;
-    margin-top: 17.5%;
-    right: 12%;
-    text-decoration: none;
-}
-.last-link-three{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 2em;
-    font-family: gramlight;
-    margin-top: 17.5%;
-    right: 3%;
-    text-decoration: none;
-}
-.last-link-one::before {
-  content: "";
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 2px;
-  top: 40px;
-  left: 0;
-  background-color: #1c1b19;
-  transform: scaleX(1);
-  transition: transform 0.3s ease;
-}
-.last-link-one:hover::before {
-  transform: scaleX(0);
-}
-.last-link-two::before {
-  content: "";
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 2px;
-  top: 40px;
-  left: 0;
-  background-color: #1c1b19;
-  transform: scaleX(1);
-  transition: transform 0.3s ease;
-}
-.last-link-two:hover::before {
-  transform: scaleX(0);
-}
-.last-link-three::before {
-  content: "";
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 2px;
-  top: 40px;
-  left: 0;
-  background-color: #1c1b19;
-  transform: scaleX(1);
-  transition: transform 0.3s ease;
-}
-.last-link-three:hover::before {
-  transform: scaleX(0);
-}
-@keyframes scroll{
-0% {left:800px;}
-100% {left:-800px;}
+
+.last-link-one{ right: 20%; }
+.last-link-two{ right: 12%; }
+.last-link-three{ right: 2%; }
+
+.last-link-one:hover, .last-link-two:hover, .last-link-three:hover {
+    color: #df7853; /* Accent color on hover */
+    text-decoration: underline;
 }

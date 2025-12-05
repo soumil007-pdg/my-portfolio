@@ -1,41 +1,55 @@
 import React from "react";
 import "./nine.css";
-import fill1 from  "../assets/vector6.jpeg";
-import fill2 from  "../assets/vector5.jpeg";
+// Replace these with actual images of your film/project
+import filmImg from  "../assets/vector6.jpeg"; 
+import techImg from  "../assets/vector5.jpeg";
+
 export const Nine = () => {
-  return (<div className="nine">
+  return (
+    <div className="nine">
         <div className="nine-line"></div>
         <div className="nine-line-two"></div>
         <div className="nine-line-three"></div>
+        
+        {/* --- PROJECT 1: SHORT FILM --- */}
         <div className="nine-block">
-            <img src={fill1} alt="img" className="nine-fill" />
+            <img src={filmImg} alt="Sanskrit Short Film" className="nine-fill" />
         </div>
-        <p className='tagr-one'>sal parasuco</p>
-        <div className="nine-block-two">
-            <img src={fill2} alt="img" className="nine-fill" />
-        </div>
-        <p className='tagr-two'>sal parasuco</p>
+        <p className='tagr-one'>THE FORGOTTEN SCRIPT</p> {/* Replace with Film Title */}
+        
         <div className="new-org-nine"></div>
-        <div className="new-nine">new</div>
+        <div className="new-nine">Film</div>
+        
         <div className="nine-des-think">
-                Thinkers is an experimental e-learning platform that offers <br />
-                a wide variety of creative masterclass by award-winning <br />
-                digital thinkers on the Awwwwards community.
+            <b>Award Winning Short Film</b> <br />
+            Won 3rd Prize at International Goa Film Festival. <br />
+            A narrative exploration in Sanskrit.
         </div>
+
+
+        {/* --- PROJECT 2: TECH / EXPERIMENT --- */}
+        <div className="nine-block-two">
+            <img src={techImg} alt="Creative Project" className="nine-fill" />
+        </div>
+        <p className='tagr-two'>SMART INDIA HACKATHON</p>
+        
         <div className="new-org-nine-two"></div>
-        <div className="new-nine-two">new</div>
+        <div className="new-nine-two">Tech</div>
+        
         <div className="nine-des-think-two">
-                Thinkers is an experimental e-learning platform that offers <br />
-                a wide variety of creative masterclass by award-winning <br />
-                digital thinkers on the Awwwwards community.
+            <b>National Finalist Project</b> <br />
+            An innovative solution developed for the <br />
+            Smart India Hackathon 2023.
         </div>
-        <div className="cap-work">all work!</div>
+
+        {/* --- FOOTER CTA --- */}
+        <div className="cap-work">All Projects</div>
         <div className="credit">
-            Follow me Instagram <br />
-            @chaniru.lk
+            Check out my GitHub <br />
         </div>
-        <a href="https://www.instagram.com/chaniru.lk/" className="here">Click Here</a>
+        <a href="https://github.com/soumil007-pdg" target="_blank" rel="noreferrer" className="here">Click Here</a>
   </div>
   );
 };
+
 export default Nine;

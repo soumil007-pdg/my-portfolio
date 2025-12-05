@@ -1,20 +1,29 @@
 import React from "react";
 import "./fifth.css";
 import bih from "../assets/avat6.jpeg";
+
 export const Fifth = () => {
-  return (<div className="five">
-    <div className="down-text">
-        Like an artisan, I like to start form raw <br />
-        matter and give life to an iconic <br />
-        product that makes your brand stand <br />
-        out, starting from a Visual Strategy <br />
-        that guide that client's vision to reality.
+  return (
+    <div className="five">
+      <div className="down-text">
+        I build digital stages. <br />
+        Where <b>logic</b> meets <b>emotion</b>. <br />
+        My process isn't just about syntax; <br />
+        it's about the <i>subtext</i> — crafting <br />
+        experiences that resonate long <br />
+        after the screen goes dark.
+      </div>
+      
+      {/* A clean link to your technical work */}
+      <a href="https://github.com/soumil007-pdg" target="_blank" rel="noreferrer" className="myButton">
+        GitHub
+      </a>
+      
+      <div className="big-block">
+        <img src={bih} alt="Soumil" className="con-bi" />
+      </div>
     </div>
-    <a href="https://www.instagram.com/chaniru.lk/" class="myButton">All work</a>
-    <div className="big-block">
-    <img src={bih} alt="bih" className="con-bi" />
-    </div>
-  </div>
   );
 };
+
 export default Fifth;

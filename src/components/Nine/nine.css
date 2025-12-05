@@ -1,164 +1,175 @@
 .nine{
-    height: 100vh; 
+    height: 100vh;
+    position: relative;
+    background-color: #c5bdb4;
 }
 .nine-line{
-    margin-top: 20%;
+    margin-top: 10%;
+    left: 0;
     width: 100%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
+    height: 1px;
+    background-color: #1c1b19;
     position: absolute;
 }
 .nine-line-two{
-    margin-top: 35%;
-    left: 25%;
-    width: 20%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
+    margin-top: 10%;
+    left: 33%;
+    width: 1px;
+    height: 90%; /* Extends down */
+    background-color: #1c1b19;
     position: absolute;
-    transform: rotate(90deg);
 }
 .nine-line-three{
-    margin-top: 35%;
-    right: 25%;
-    width: 20%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
+    margin-top: 10%;
+    left: 66%;
+    width: 1px;
+    height: 90%;
+    background-color: #1c1b19;
     position: absolute;
-    transform: rotate(90deg);
 }
+
+/* --- PROJECT 1 STYLES --- */
 .nine-block{
     position: absolute;
-    height: 150px;
-    width: 400px;
-    left: 2%;
-    margin-top: 25%;
-}
-.nine-block-two{
-    position: absolute;
-    height: 150px;
-    width: 400px;
-    right: 3%;
-    margin-top: 25%;
+    height: 250px;
+    width: 300px;
+    left: 4%;
+    margin-top: 15%;
+    overflow: hidden;
 }
 .nine-fill{
+    position: absolute;
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
+.nine-block:hover .nine-fill, .nine-block-two:hover .nine-fill {
+    transform: scale(1.1);
+}
+
 .tagr-one{
     position: absolute;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 600;
+    font-family: scari;
+    font-size: 2.5em;
     color: #1c1b19;
-    font-family: gramnarrow;
-    left: 2.5%;
-    margin-top: 36%;
-}
-.tagr-two{
-    position: absolute;
-    font-size: 2em;
+    margin-top: 35%; /* Below image */
+    left: 4%;
     text-transform: uppercase;
-    font-weight: 600;
-    color: #1c1b19;
-    font-family: gramnarrow;
-    right: 19%;
-    margin-top: 36%;
+    letter-spacing: -2px;
 }
+
 .new-org-nine{
     position: absolute;
     height: 30px;
-    width: 55px;
+    width: 60px;
     background-color: #df7853;
-    left: 15.5%;
+    margin-top: 35.5%;
+    left: 25%;
     border-radius: 10px;
-    margin-top: 36.2%;
-}
-.new-org-nine-two{
-    position: absolute;
-    height: 30px;
-    width: 55px;
-    background-color: #df7853;
-    right: 14.9%;
-    border-radius: 10px;
-    margin-top: 36.2%;
 }
 .new-nine{
     position: absolute;
     color: #c5bdb4;
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-transform: uppercase;
     font-family: scari;
-    letter-spacing: -3px;
-    margin-top: 36.55%;
-    left: 15.95%;
+    margin-top: 35.8%;
+    left: 25.8%;
+}
+
+.nine-des-think{
+    position: absolute;
+    font-size: 1.2em;
+    color: #1c1b19;
+    font-family: gramlight;
+    margin-top: 40%;
+    left: 4%;
+    line-height: 1.4;
+}
+
+/* --- PROJECT 2 STYLES --- */
+.nine-block-two{
+    position: absolute;
+    height: 250px;
+    width: 300px;
+    left: 37%;
+    margin-top: 15%;
+    overflow: hidden;
+}
+
+.tagr-two{
+    position: absolute;
+    font-family: scari;
+    font-size: 2.5em;
+    color: #1c1b19;
+    margin-top: 35%;
+    left: 37%;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+.new-org-nine-two{
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    background-color: #df7853;
+    margin-top: 35.5%;
+    left: 58%; /* Relative to col 2 */
+    border-radius: 10px;
 }
 .new-nine-two{
     position: absolute;
     color: #c5bdb4;
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-transform: uppercase;
     font-family: scari;
-    letter-spacing: -3px;
-    margin-top: 36.55%;
-    right: 15.6%;
+    margin-top: 35.8%;
+    left: 58.8%;
 }
-.nine-des-think{
-    position: absolute;
-    font-size: 1.3em;
-    color: #1c1b19;
-    font-family: gramlight;
-    margin-top: 39%;
-    left: 2.5%;
-}
+
 .nine-des-think-two{
     position: absolute;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #1c1b19;
     font-family: gramlight;
-    margin-top: 39%;
-    right: 3.5%;
+    margin-top: 40%;
+    left: 37%;
+    line-height: 1.4;
 }
+
+/* --- RIGHT COLUMN (CTA) --- */
 .cap-work{
     position: absolute;
     font-family: scari;
-    text-transform: uppercase;
+    font-size: 4em;
     color: #1c1b19;
-    font-size: 5em;
-    margin-top: 26%;
-    left: 37%;
+    right: 2%;
+    margin-top: 15%;
+    text-transform: uppercase;
+    text-align: right;
 }
 .credit{
     position: absolute;
-    color: #1c1b19;
-    font-size: 3em;
-    text-align: center;
-    margin-top: 33%;
-    left: 37%;
     font-family: gramlight;
+    font-size: 1.5em;
+    color: #1c1b19;
+    right: 2%;
+    margin-top: 25%;
+    text-align: right;
+    line-height: 1.5;
 }
 .here{
     position: absolute;
+    font-family: gramnarrow;
+    font-size: 2em;
+    color: #df7853;
+    right: 2%;
+    margin-top: 35%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.here:hover {
     color: #1c1b19;
-    font-size: 3em;
-    text-align: center;
-    margin-top: 43%;
-    left: 44%;
-    font-family: gramlight;
-    text-decoration: none;
-}
-.here::before {
-  content: "";
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 2px;
-  top: 60px;
-  left: 0;
-  background-color: #1c1b19;
-  transform: scaleX(1);
-  transition: transform 0.3s ease;
-}
-.here:hover::before {
-  transform: scaleX(0);
 }

@@ -1,55 +1,81 @@
 import React from "react";
 import "./eight.css";
+
 export const Eight = () => {
-  return (<div className="eight">
-    <div className="eight-bloc"></div>
-    <p className="art">artisan</p>
-    <div className="art-des">
-      Over the past 3+ years, I've teamed up <br />
-      with high-profile clients and partnets <br />
-      globally earning mentions & awards from <br />
-      digital platforms like The FWA,
+  return (
+    <div className="eight">
+      <div className="eight-bloc"></div>
+      
+      {/* Headline */}
+      <p className="art">journey</p>
+      
+      <div className="art-des">
+        My path hasn't been a straight line. <br />
+        It's a curated mix of logic, code, <br />
+        performance, and storytelling. <br />
+        Here is how I built my foundation.
+      </div>
+
+      <div className="awwwards">Education</div>
+      <div className="com">
+        <b>Information and Technology</b> <br />
+        Dr. Akhilesh Das Gupta Institute of Professional Studies <br />
+      </div>
+
+      <div className="testimonials-section">
+        {/* Radio Inputs for CSS Slider */}
+        <input type="radio" name="slider" title="Engineering" checked="checked" className="slider__nav"/>
+        <input type="radio" name="slider" title="Acting" className="slider__nav"/>
+        <input type="radio" name="slider" title="Tech Stack" className="slider__nav"/>
+        <input type="radio" name="slider" title="Creative" className="slider__nav"/>
+        
+        <div className="slider__inner">
+          
+          {/* SLIDE 1: ENGINEERING */}
+          <div className="slider__contents">
+            <quote>01</quote>
+            <h2 className="slider__caption">Engineering</h2>
+            <p className="slider__txt">
+              pursued IT. Built a strong foundation in <br />
+              Algorithms, Data Structures, and Computational Logic.
+            </p>
+          </div>
+
+          {/* SLIDE 2: ACTING */}
+          <div className="slider__contents">
+            <quote>02</quote>
+            <h2 className="slider__caption">Theatre (NSD)</h2>
+            <p className="slider__txt">
+              Trained at the National School of Drama. Learned the art of <br />
+              empathy, stage presence, and narrative structure.
+            </p>
+          </div>
+
+          {/* SLIDE 3: TECH STACK */}
+          <div className="slider__contents">
+            <quote>03</quote>
+            <h2 className="slider__caption">The Tech Stack</h2>
+            <p className="slider__txt">
+              Frontend: React.js, Tailwind, GSAP. <br />
+              Backend: Node.js, Python, MongoDB. <br />
+              ML: K-Means Clustering, Signal Processing.
+            </p>
+          </div>
+
+          {/* SLIDE 4: CREATIVE */}
+          <div className="slider__contents">
+            <quote>04</quote>
+            <h2 className="slider__caption">Creative Suite</h2>
+            <p className="slider__txt">
+              Direction, Screenwriting, Video Editing. <br />
+              Merging visual aesthetics with functional design.
+            </p>
+          </div>
+
+        </div>
+      </div>
     </div>
-    <div className="awwwards">awwwards</div>
-    <div className="com">Communication Arts, Site Inspire, <br />
-    Behance, Codrops and many others <br />
-    <b>@chaniru.lk - Instagram</b>
-    </div>
-    <div class="testimonials-section">
-    <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
-    <input type="radio" name="slider" title="slide2" class="slider__nav"/>
-    <input type="radio" name="slider" title="slide3" class="slider__nav"/>
-    <input type="radio" name="slider" title="slide4" class="slider__nav"/>
-    <input type="radio" name="slider" title="slide5" class="slider__nav"/>
-  <div class="slider__inner">
-    <div class="slider__contents">
-      <quote>&rdquo;</quote>
-      <p class="slider__txt">Follow me on GitHub and Instagram for more work... - chaniru.lk  - the change</p>
-      <h2 class="slider__caption">@chaniru.lk</h2>
-    </div>
-    <div class="slider__contents">
-      <quote>&rdquo;</quote>
-      <p class="slider__txt">You all bend over backwards to get it done. Inside sales and the Account Managers are great! It's your service...you all know that it's not just about taking orders it's about service. Why do we choose you guys - your people, your prices, you're quick and you have a ton of technical knowledge.</p>
-      <h2 class="slider__caption">Jared | Rexam</h2>
-    </div>
-    <div class="slider__contents">
-      <quote>&rdquo;</quote>
-      <p class="slider__txt">Follow me on GitHub and Instagram for more work... - chaniru.lk  - the change</p>
-      <h2 class="slider__caption">@chaniru.lk</h2>
-    </div>
-    <div class="slider__contents">
-      <quote>&rdquo;</quote>
-      <p class="slider__txt">You answer my questions, always takes care of problems, and I never have a hassle.</p>
-      <h2 class="slider__caption">Rex | LNP Engineering Plastics</h2>
-    </div>
-    <div class="slider__contents">
-      <quote>&rdquo;</quote>
-      <p class="slider__txt">Follow me on GitHub and Instagram for more work... - chaniru.lk  - the change</p>
-      <h2 class="slider__caption">@chaniru.lk</h2>
-    </div>
-  </div>
-</div>
-  </div>
   );
 };
+
 export default Eight;

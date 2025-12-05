@@ -1,97 +1,102 @@
 .six{
     height: 100vh;
+    position: relative;
+    background-color: #c5bdb4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* was center */
+    align-items: center;
+    overflow: hidden; 
 }
+
+
+/* CHANGED: Moved Top Line UP to 0% as per your request */
 .six-line{
-    margin-top: 6%;
+    top: 0%; 
+    left: 0;
     width: 100%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
+    height: 1px;
+    background-color: #1c1b19;
     position: absolute;
+    z-index: 1; /* Lines stay behind text if overlap happens */
 }
+
+.row {
+    display: flex;
+    position: absolute;          /* NEW */
+    top: 15%;                    /* <<< controls how high it sits between the lines */
+    left: 50%;                   /* center horizontally */
+    transform: translateX(-50%); /* center horizontally */
+
+    width: 95%;
+    justify-content: space-around;
+    z-index: 10;
+    align-items: center;
+}
+
+
 .column {
-  position: relative;
-  left: 10px;
-  top: 150px;
-  float: left;
-  width: 23%;
-  padding: 10px;
-  height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    padding: 0 0px;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.sotd{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 2em;
-    font-family: gramlight;
-    text-transform: uppercase;
-}
-.st-head{
-    position: absolute;
-    font-size: 4em;
-    color: #1c1b19;
-    font-family: scari;
-    letter-spacing: -3px;
-    text-transform: uppercase;
-    top: 50px;
-    left: 10px;
-}
-.num{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 10em;
-    font-family: scari;
-    right: 50px;
-}
-.sotd-two{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 2em;
-    font-family: gramlight;
-    text-transform: uppercase;
-    left: 20px;
-}
-.st-head-two{
-    position: absolute;
-    font-size: 4.6em;
-    color: #1c1b19;
-    font-family: scari;
-    letter-spacing: -3px;
-    text-transform: uppercase;
-    top: 50px;
-    left: 20px;
-}
-.num-two{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 10em;
-    font-family: scari;
-    right: 30px;
 
-}
-.num-four{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 10em;
-    font-family: scari;
-    right: 20px;
-
-}
-.sotd-three{
-    position: absolute;
-    color: #1c1b19;
-    font-size: 2em;
+/* Small Top Labels (Theatre, Cinema) */
+.sotd, .sotd-two, .sotd-three {
     font-family: gramlight;
+    font-size: 1.1em;
     text-transform: uppercase;
-    left: 20px;
+    color: #1c1b19;
+    letter-spacing: 2px;
+    margin-bottom: 5px; /* Minimal spacing */
 }
+
+/* Headers (Festival Names) */
+.st-head, .st-head-two {
+    font-family: scari;
+    /* CHANGED: Reduced to 2em to save vertical space */
+    font-size: 2em; 
+    text-transform: uppercase;
+    color: #1c1b19;
+    line-height: 1.1;
+    margin-bottom: 5px;
+    min-height: 2.2em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* The Big Text (Awards) */
+.award-text {
+    font-family: scari;
+    /* CHANGED: Reduced to 2.5em so it doesn't push "Theatre" into the top line */
+    font-size: 2.5em; 
+    color: #b55937;
+    line-height: 1;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+/* Role Tag */
+.role-tag {
+    font-family: gramlight;
+    font-size: 1em;
+    color: #1c1b19;
+    margin-top: 5px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* CHANGED: Moved Bottom Line DOWN to 50% as per your request */
 .six-line-two{
-    margin-top: 8%;
+    bottom: 50%;
+    left: 0;
     width: 100%;
-    height: 47px;
-    border-bottom: 1px solid #1c1b19;
+    height: 1px;
+    background-color: #1c1b19;
     position: absolute;
+    z-index: 1;
 }

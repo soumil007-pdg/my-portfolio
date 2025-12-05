@@ -22,8 +22,7 @@ export const Fourth = () => {
         A convergence of signal <br />
         processing & design.
       </div>
-      
-      <div className="tip">view!</div>
+      <a href="https://github.com/soumil007-pdg/articulation-agent" class="tip">view!</a>
       <div className="tp-des">Click the image to explore</div>
       <div className="four-line-two"></div>
       

@@ -1,64 +1,78 @@
 .five{
     height: 100vh;
+    position: relative;
 }
 .down-text{
     position: absolute;
-    font-size: 2em;
+    font-size: 2.2em;
     color: #1c1b19;
     font-family: gramlight;
-    margin-top: 19%;
-    right: 2%;
+    margin-top: 18%; /* Adjusted for better eye-level */
+    right: 5%;      /* Pulled in slightly from the edge */
+    line-height: 1.4; /* critical for making it look less "jarring" */
+    text-align: right;
+    z-index: 2;
 }
+/* Styling for the bold words to make them pop elegantly */
+.down-text b {
+    font-family: gramnarrow;
+    font-weight: normal; /* dependent on font, but keeps it clean */
+}
+.down-text i {
+    font-family: gramnarrow;
+    font-style: italic;
+    color: #df7853; /* Subtle accent color on 'subtext' */
+}
+
 .myButton {
     position: absolute;
-	border-radius: 50%;
-	border:1px solid #1c1b19;
-	display:inline-block;
-	cursor:pointer;
-	color: #1c1b19;
+    border-radius: 50%;
+    border: 1px solid #1c1b19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #1c1b19;
     font-family: gramnarrow;
-	font-size: 5em;
-	padding: 40px 40px;
-	text-decoration:none;
+    font-size: 3em; /* Slightly smaller for elegance */
+    height: 160px;
+    width: 160px;
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: -3px;
-    margin-top: 39%;
-    right: 3%;
+    letter-spacing: -2px;
+    margin-top: 40%;
+    right: 5%;
+    background: transparent;
+    transition: all 0.4s ease;
+    z-index: 10;
 }
 .myButton:hover {
-	color: #bb6a4c;
+    color: #df7853;
+    border-color: #df7853;
+    transform: scale(1.05);
 } 
-a{
-    position: absolute;
+/* Removes the default underline effect if present */
+a.myButton::before {
+    display: none;
 }
-a:hover {
-  color: #000;
-}
-a::before {
-  content: "";
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 2px;
-  top: 80px;
-  left: 0;
-  background-color: #1c1b19;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-a:hover::before {
-  transform: scaleX(1);
-}
+
 .big-block{
     position: absolute;
     height: 560px;
     width: 850px;
     left: 2%;
     margin-top: 10%;
+    overflow: hidden;
 }
 .con-bi{
     position: absolute;
     height: 100%;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
+    /* Cinematic look: Black & white by default, color on hover */
+    filter: grayscale(100%) contrast(1.1);
+    transition: filter 0.6s ease;
+}
+.con-bi:hover {
+    filter: grayscale(0%) contrast(1);
 }
